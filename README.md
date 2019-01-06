@@ -1,2 +1,2 @@
 # ProjectBuilderCatalog
-Catalog of project builder templates
+Catalog of the project builder templates
