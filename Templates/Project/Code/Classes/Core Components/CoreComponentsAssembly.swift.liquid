@@ -5,7 +5,10 @@ import Swinject
 final class CoreComponentsAssembly: Assembly {
     
     func assemble(container: Container) {
-        
+        container.register(ThirdPartiesConfiguratorProtocol.self) { r in
+            let thirdPartiesConfigurator = ThirdPartiesConfigurator()
+            return thirdPartiesConfigurator
+        }
     }
     
 }
