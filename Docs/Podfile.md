@@ -13,7 +13,7 @@ target 'PROJECT_NAME' do
 	pod 'Swinject', '~> 2.5.0'
 	pod 'SwinjectStoryboard', '~> 2.1.0'
 
-  	# Networking
+	# Networking
 	pod 'Moya/RxSwift', '~> 12.0.1'
 
 	# Helpers
