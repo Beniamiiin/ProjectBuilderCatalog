@@ -1,0 +1,15 @@
+{% include 'header' %}
+
+import Swinject
+
+final class AppDelegateAssembly: Assembly {
+    
+    func assemble(container: Container) {
+        container.register(LaunchAppDelegate.self) { r in
+            let launchAppDelegate = LaunchAppDelegate()
+            launchAppDelegate.thirdPartiesConfigurator = r.resolve(ThirdPartiesConfiguratorProtocol.self)
+            return launchAppDelegate
+        }
+    }
+    
+}

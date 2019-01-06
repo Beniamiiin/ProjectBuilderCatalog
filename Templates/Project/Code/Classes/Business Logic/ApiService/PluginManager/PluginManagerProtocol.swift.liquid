@@ -1,0 +1,10 @@
+{% include 'header' %}
+
+import Foundation
+import Moya
+
+protocol PluginManagerProtocol: class {
+    
+    var networkLoggerPlugin: NetworkLoggerPlugin { get }
+    
+}

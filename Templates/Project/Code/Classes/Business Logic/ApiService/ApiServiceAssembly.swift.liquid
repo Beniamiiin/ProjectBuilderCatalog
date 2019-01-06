@@ -1,0 +1,16 @@
+{% include 'header' %}
+
+import Foundation
+import Swinject
+import Moya
+
+final class ApiServiceAssembly: Assembly {
+    
+    func assemble(container: Container) {
+        container.register(PluginManagerProtocol.self) { r in
+            let pluginManger = PluginManager()
+            return pluginManger
+        }
+    }
+    
+}

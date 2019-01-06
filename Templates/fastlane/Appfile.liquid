@@ -1,0 +1,5 @@
+apple_id '{{ user.email }}'
+
+for_lane :appstore do
+	app_identifier '{{ project_info.bundle_id }}'
+end

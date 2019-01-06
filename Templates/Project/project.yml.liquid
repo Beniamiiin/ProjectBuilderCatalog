@@ -1,0 +1,22 @@
+name: {{ project_info.name }}
+options:
+  deploymentTarget: 
+    iOS: 10.0
+  defaultConfig: Release
+  groupSortPosition: bottom
+attributes:
+  ORGANIZATIONNAME: {{ project_info.bundle_id }}
+targets:
+  {{ project_info.name }}:
+    platform: iOS
+    type: application
+    deploymentTarget: 10.0
+    sources:
+      - {{ project_info.name }}
+    settings:
+      base:
+        INFOPLIST_FILE: {{ project_info.name }}/Supporting Files/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: {{ project_info.bundle_id }}
+        TARGETED_DEVICE_FAMILY: 1
+        DEVELOPMENT_TEAM: 84P8W4YXKB
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: $(inherited)

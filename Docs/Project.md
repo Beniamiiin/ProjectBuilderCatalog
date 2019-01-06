@@ -1,0 +1,53 @@
+# Project hirerarchy
+
+- Project
+	- Classes
+		- Application
+			- App Delegates
+				- AppDelegate.swift
+				- AppDelegateAssembly.swift
+				- LaunchAppDelegate
+		- Constants
+		- Core Components
+			- CoreComponentsAssembly.swift
+			- ThirdPartiesConfigurator
+				- ThirdPartiesConfigurator.swift
+				- ThirdPartiesConfiguratorProtocol.swift
+		- Helpers
+			- Extensions
+			- Tools
+		- Business Logic
+			- ApiService
+				- ApiServiceAssembly.swift
+				- PluginManager
+					- PluginManager.swift
+					- PluginManagerProtocol.swift
+				- Services
+		- Models
+		- Presentation
+			- Base
+			- User Stories
+				- Story1
+					- Story1.storyboard
+					- Router
+						- Story1Routable.swift
+					- Protocols
+					- Modules
+						- Module1
+						- Module2
+						- Module3
+				- Story2
+					- Story2.storyboard
+					- Router
+						- Story2Routable.swift
+					- Protocols
+					- Modules
+						- Module1
+						- Module2
+						- Module3
+	- Resources
+		- Assets.xcassets
+		- Fonts
+		- Storyboards
+	- Supporing Files
+		- Info.plist

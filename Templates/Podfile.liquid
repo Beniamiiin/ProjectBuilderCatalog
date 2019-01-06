@@ -1,0 +1,21 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target '{{ project_info.name }}' do
+	# Rx
+	pod 'RxSwift', '4.4.0'
+	pod 'RxCocoa', '4.4.0'
+	pod 'RxKeyboard', '0.9.0'
+	pod 'RxDataSources', '3.1.0'
+
+	# DI
+	pod 'Swinject', '2.5.0'
+	pod 'SwinjectStoryboard', '2.1.0'
+
+  	# Networking
+	pod 'Moya/RxSwift', '12.0.1'
+
+	# Helpers
+	pod 'UIColor_Hex_Swift', '4.2'
+    pod 'BenToolKit', :git => 'https://github.com/Beniamiiin/BenToolKit.git'
+end

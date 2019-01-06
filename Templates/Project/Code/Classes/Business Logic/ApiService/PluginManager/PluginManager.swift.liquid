@@ -1,0 +1,22 @@
+{% include 'header' %}
+
+import Foundation
+import Moya
+
+final class PluginManager: PluginManagerProtocol {
+    
+    // MARK: - PluginManagerProtocol
+    
+    var networkLoggerPlugin: NetworkLoggerPlugin {
+        return NetworkLoggerPlugin(verbose: true) { data -> (Data) in
+            do {
+                let dataAsJSON = try JSONSerialization.jsonObject(with: data)
+                let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
+                return prettyData
+            } catch {
+                return data
+            }
+        }
+    }
+    
+}
