@@ -6,17 +6,18 @@ use_frameworks!
 
 target 'PROJECT_NAME' do
 	# Rx
-	pod 'RxSwift', '~> 4.4.0'
-	pod 'RxCocoa', '~> 4.4.0'
+	pod 'RxSwift', '4.4.0'
+	pod 'RxCocoa', '4.4.0'
 
 	# DI
-	pod 'Swinject', '~> 2.5.0'
-	pod 'SwinjectStoryboard', '~> 2.1.0'
+	pod 'Swinject', '2.5.0'
+	pod 'SwinjectStoryboard', '2.1.0'
 
 	# Networking
-	pod 'Moya/RxSwift', '~> 12.0.1'
+	pod 'Moya/RxSwift', '12.0.1'
 
 	# Helpers
-	pod 'UIColor_Hex_Swift', '~> 4.2'
+	pod 'UIColor_Hex_Swift', '4.2'
+	pod 'BenToolKit', :git => 'https://github.com/Beniamiiin/BenToolKit.git'
 end
 ```
